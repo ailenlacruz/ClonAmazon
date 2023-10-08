@@ -1,0 +1,540 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", sans-serif;
+}
+
+nav {
+  background-color: #131921;
+  height: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  height: 100%;
+  margin: auto;
+}
+.container .logo {
+  background: url("https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB587940754_.png");
+  background-repeat: no-repeat;
+  background-position-y: -40px;
+  overflow: hidden;
+  height: 49px;
+  width: 120px;
+}
+.container .envio {
+  margin: 0px 20px;
+  padding: 7px 7px;
+}
+.container .envio .l1 {
+  color: #ccc;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  padding-left: 17px;
+}
+.container .envio .l2 {
+  color: #fff;
+  font-size: 17px;
+  line-height: 15px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 4px;
+}
+.container .barra {
+  width: 50%;
+  display: flex;
+  height: 40px;
+  border-radius: 3px;
+}
+.container .barra .all {
+  width: 70px;
+  border: none;
+  background-color: #e0e0e0;
+  font-size: 11px;
+  padding: 4px;
+  color: grey;
+  border-radius: 3px 0px 0px 3px;
+}
+.container .barra .search {
+  border: none;
+  border-top: 1px solid transparent;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px 10px;
+}
+.container .barra .iconsearch {
+  width: 49px;
+  background-color: rgba(248, 171, 28, 0.966);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: none;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.idioma {
+  margin-left: 10px;
+  margin-top: 4px;
+  display: flex;
+  padding: 10px 10px;
+}
+.idioma .bandera {
+  height: 18px;
+  width: 30px;
+}
+
+.idioma p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.login {
+  padding: 3px 3px;
+}
+
+.pedido {
+  padding: 4px 4px;
+}
+
+.cart {
+  padding: 10px 10px;
+  font-size: 17px;
+  display: flex;
+  color: white;
+}
+.cart .carticon {
+  font-size: 30px;
+}
+
+.cart p {
+  margin-top: 10px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.l3 {
+  color: #ece9e9;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+.l4 {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 800;
+}
+
+.borde2:hover {
+  outline: 2px solid rgba(248, 171, 28, 0.966);
+  cursor: pointer;
+}
+
+.borde1 {
+  border: 1.5px solid transparent;
+}
+.borde1:hover {
+  border: 1.5px solid white;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+section {
+  height: 40px;
+  background-color: #232f3e;
+  padding-left: 10px;
+  padding-right: 270px;
+  font-family: "Amazon Ember";
+}
+section .lista {
+  padding: 0px 20px;
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+}
+
+.menu1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 7px;
+}
+
+.menu2 {
+  font-size: 20px;
+}
+
+.lista li {
+  padding: 10px 9px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 300;
+}
+
+.lista li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  height: 1170px;
+  background-image: linear-gradient(to top, #e3e6e6, #e3e6e6, transparent), url("https://m.media-amazon.com/images/I/71n3URQek3L._SX3000_.jpg");
+  background-size: 100% 100%, contain;
+  background-repeat: no-repeat;
+}
+
+.containerMain {
+  position: relative;
+  top: 290px;
+  margin: 0px 20px;
+  height: 890px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.maindiv {
+  background-color: #fff;
+  height: 390px;
+  width: 300px;
+  padding: 20px 20px;
+}
+
+.maindiv h2 {
+  color: #0F1111;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.imagemain {
+  padding: 10px;
+  height: 340px;
+}
+
+.imagemain a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: none;
+  font-family: "Amazon Ember";
+  position: relative;
+  bottom: -50px;
+}
+
+.imagemain1 img {
+  width: 280px;
+  padding-right: 20px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.imagemain1 a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: none;
+  font-family: "Amazon Ember";
+}
+
+.estilo1 {
+  cursor: pointer;
+}
+
+.divfooter {
+  background-color: #fff;
+  width: 100%;
+  height: 150px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.divfooter span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  color: #000;
+  font-size: 13px;
+  line-height: none;
+  font-weight: none;
+  width: 100%;
+  font-style: italic;
+  border: 1.5px solid #e0e0e0;
+}
+.divfooter span p {
+  position: relative;
+  left: 40px;
+  top: 30px;
+}
+.divfooter span .divfootera {
+  height: 70px;
+  width: 90px;
+  line-height: 13px;
+  margin-top: 10px;
+}
+.divfooter span .divfootera a {
+  color: #007185;
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.divfooter span .divfootera a:hover {
+  cursor: pointer;
+  color: #C7511F;
+}
+
+.botonFooter {
+  background-color: #37475a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  height: 49px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: none;
+  text-decoration: none;
+}
+.botonFooter:hover {
+  background-color: #46586e;
+}
+
+.mainFooter1 {
+  background-color: #232F3E;
+  height: 500px;
+  width: 100%;
+  padding-left: 0;
+}
+.mainFooter1 .containerFooter1 {
+  position: relative;
+  top: 10px;
+  left: 140px;
+  width: 100%;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.mainFooter1 .containerFooter1 .containerInfo1 {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.mainFooter1 .containerFooter1 .containerInfo1 span {
+  color: #fff;
+  font-size: 16px;
+  line-height: none;
+  font-weight: 700;
+  margin: 6px 0 14px 0;
+  white-space: nowrap;
+}
+.mainFooter1 .containerFooter1 .containerInfo1 a {
+  color: #ddd;
+  font-size: 14px;
+  line-height: none;
+  font-weight: none;
+  white-space: normal;
+  text-decoration: none;
+  margin-bottom: 14px;
+  word-wrap: break-word;
+}
+.mainFooter1 .containerFooter1 .containerInfo1 a:hover {
+  text-decoration-line: underline;
+}
+.mainFooter1 .containerFooter1 .containerInfo1 .tamaño1 {
+  width: 70px;
+}
+.mainFooter1 .containerFooter1 .containerInfo1 .tamaño2 {
+  width: 100px;
+}
+.mainFooter1 hr {
+  width: 125%;
+  border: 0.5px solid rgba(229, 229, 229, 0.3882352941);
+}
+.mainFooter1 .containerFooter2 {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 300px;
+  margin-top: 15px;
+}
+.mainFooter1 .containerFooter2 .containerInfo2 img {
+  margin-left: 4px;
+  padding: 8px 7px;
+  border: 1px solid rgba(229, 229, 229, 0.7137254902);
+  border-radius: 3px;
+}
+.mainFooter1 .containerFooter2 .containerInfo2 img:hover {
+  cursor: pointer;
+}
+
+.mainFooter3 {
+  display: flex;
+  gap: 59px;
+  background-color: #131A22;
+  padding: 30px;
+  height: 570px;
+}
+.mainFooter3 .containerInfo3 {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.mainFooter3 .containerInfo3 span {
+  margin-bottom: 20px;
+}
+.mainFooter3 .containerInfo4 {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+}
+.mainFooter3 .containerInfo4 .container4-1 {
+  display: flex;
+  flex-direction: column;
+}
+.mainFooter3 .containerInfo4 .separacion1 {
+  margin-bottom: 70px;
+}
+.mainFooter3 .containerInfo4 .separacion2 {
+  margin-bottom: 20px;
+}
+.mainFooter3 .containerInfo4 .separacion3 {
+  margin-top: 80px;
+}
+.mainFooter3 .containerInfo4 .separacion4 {
+  margin-top: 40px;
+}
+.mainFooter3 .containerInfo5 {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+}
+.mainFooter3 .containerInfo5 span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.mainFooter3 .containerInfo5 .separicion5 {
+  margin-top: 50px;
+}
+.mainFooter3 .containerInfo6 {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+}
+.mainFooter3 .containerInfo6 span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.mainFooter3 .containerInfo6 span .separacion6 {
+  margin-top: 50px;
+}
+.mainFooter3 .containerInfo7 {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+}
+.mainFooter3 .containerInfo7 span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+.mainFooter3 .containerInfo8 {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+}
+.mainFooter3 .containerInfo8 span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.mainFooter3 .containerInfo8 .separacion8, .mainFooter3 .containerInfo8 .separacion9 {
+  margin-top: 40px;
+}
+
+.letra1 {
+  color: #ddd;
+  font-size: 12px;
+  line-height: 115%;
+  font-weight: none;
+  text-decoration: none;
+  white-space: normal;
+  text-align: left;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+.letra2 {
+  color: #999;
+  font-size: 12px;
+  line-height: 110%;
+  font-weight: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+.lineaBlanca:hover {
+  text-decoration-line: underline;
+  text-decoration-color: #fff;
+  cursor: pointer;
+}
+
+footer .footerFinal {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  background-color: #131A22;
+  padding: 0px 420px;
+}
+footer .footerFinal img {
+  position: relative;
+  bottom: 6px;
+  right: 9px;
+}
+footer .footerP {
+  background-color: #131A22;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

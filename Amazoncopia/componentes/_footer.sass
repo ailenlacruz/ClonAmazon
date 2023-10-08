@@ -1,0 +1,183 @@
+.divfooter
+    background-color: #fff
+    width: 100%
+    height: 150px
+    padding-top: 50px
+    padding-bottom: 10px
+    
+
+    span
+        @include flexBox(row, space-between, none)
+        @include letras(#000, 13px, none, none)
+        width: 100%
+        font-style: italic
+        border: 1.5px solid #e0e0e0
+        p
+            position: relative
+            left: 40px
+            top: 30px
+
+        .divfootera
+            height: 70px
+            width: 90px
+            line-height: 13px
+            margin-top: 10px
+            a
+                @include letras(#007185, 10px, 11px, 700)
+                text-decoration: none  
+                &:hover
+                    cursor: pointer
+                    color: #C7511F    
+
+.botonFooter
+    background-color: #37475a
+    @include flexBox(row, center, center)
+    width: 100%
+    border: none
+    height: 49px
+    @include letras(#fff, 14px, 20px, none)
+    text-decoration: none
+    &:hover
+        background-color: #46586e
+
+.mainFooter1
+    background-color:#232F3E 
+    height: 500px
+    width: 100%
+    padding-left: 0
+    .containerFooter1
+        position: relative
+        top: 10px
+        left: 140px
+        width: 100%
+        padding: 50px 10px
+        display: flex
+        justify-content: space-between
+        .containerInfo1
+            width: 200px
+            display: flex
+            flex-direction: column
+            span
+                @include letras(#fff, 16px, none, 700)
+                margin: 6px 0 14px 0
+                white-space: nowrap
+            a
+                @include letras(#ddd, 14px, none, none)
+                white-space: normal
+                text-decoration: none
+                margin-bottom: 14px
+                word-wrap: break-word
+                &:hover
+                    text-decoration-line: underline
+            .tamaño1
+                width: 70px
+            .tamaño2 
+                width: 100px
+    hr
+        width: 125%
+        border: 0.5px solid #e5e5e563
+    .containerFooter2
+        width: 700px
+        @include flexBox(row, space-between, center)
+        margin-left: 300px
+        margin-top: 15px
+        .containerInfo2 img
+            margin-left: 4px
+            padding: 8px 7px
+            border: 1px solid #e5e5e5b6
+            border-radius: 3px
+            &:hover
+                cursor: pointer
+                
+
+.mainFooter3
+    display: flex
+    gap: 59px
+    background-color: #131A22
+    padding: 30px 
+    height: 570px
+    .containerInfo3
+        width:70px
+        @include column()
+        margin-left: 100px
+        span
+            margin-bottom: 20px
+    .containerInfo4
+        width: 140px
+        @include column()
+        .container4-1
+            @include column() 
+        .separacion1
+            margin-bottom: 70px
+        .separacion2
+            margin-bottom: 20px
+        .separacion3
+            margin-top: 80px 
+        .separacion4
+            margin-top: 40px 
+    .containerInfo5
+        width: 170px
+        @include column()
+        span
+            @include column()
+            margin-bottom: 25px
+        .separicion5
+             margin-top: 50px
+    .containerInfo6
+        width: 140px
+        @include column()
+        span
+            @include column()
+            margin-bottom: 30px
+            .separacion6
+                margin-top: 50px
+    .containerInfo7
+        width: 140px
+        @include column()
+        span
+            @include column()
+            margin-bottom: 45px
+    .containerInfo8
+        width: 140px
+        @include column()
+        span
+            @include column()
+            margin-bottom: 30px
+        .separacion8, .separacion9
+            margin-top: 40px
+
+.letra1
+    @include letras(#ddd, 12px, 115%, none)
+    text-decoration: none
+    white-space: normal
+    text-align: left
+    text-indent: initial
+    border-spacing: 2px
+
+.letra2
+    @include letras(#999, 12px, 110%, none)
+    text-decoration: none
+    border-collapse: collapse
+    text-indent: initial
+    border-spacing: 2px
+
+.lineaBlanca
+    &:hover
+        text-decoration-line: underline 
+        text-decoration-color: #fff
+        cursor: pointer
+
+footer    
+    .footerFinal 
+        display: flex
+        p
+        @include flexBox(row, space-between, none)
+        background-color: #131A22
+        padding: 0px 420px
+        img
+            position: relative
+            bottom: 6px
+            right: 9px
+    .footerP
+        background-color: #131A22
+        @include flexBox(row, center, center)

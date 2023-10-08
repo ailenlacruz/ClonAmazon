@@ -1,0 +1,53 @@
+main
+    height: 1170px
+    background-image: linear-gradient(to top, #e3e6e6,#e3e6e6, transparent), url('https://m.media-amazon.com/images/I/71n3URQek3L._SX3000_.jpg')
+    background-size: 100% 100%, contain
+    background-repeat: no-repeat
+
+.containerMain
+    position: relative
+    top: 290px
+    margin: 0px 20px
+    height: 890px
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+ 
+
+.maindiv
+    background-color: #fff
+    height: 390px
+    width: 300px
+    padding: 20px 20px
+    
+.maindiv h2 
+    @include letras(#0F1111, 20px, 27px, 700)
+    padding-bottom: 10px
+
+.imagemain 
+    padding: 10px
+    height: 340px
+    
+
+.imagemain a 
+    text-decoration: none
+    @include letras(#007185, 13px, 19px, none)
+    @include font()
+    position: relative
+    bottom: -50px
+
+.imagemain1 img
+    width: 280px
+    padding-right: 20px
+    height: 280px
+    overflow: hidden
+   
+
+.imagemain1 a 
+    text-decoration: none
+    @include letras(#007185, 13px, 19px, none)
+    @include font()
+
+.estilo1
+    cursor: pointer    
+
+    

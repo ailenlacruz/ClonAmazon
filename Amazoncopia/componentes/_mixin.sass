@@ -1,0 +1,20 @@
+@mixin font()
+    font-family: $fuentefamilia
+
+@mixin flexBox($direccion:row,$justify:center,$align:center)
+    display: flex
+    flex-direction: $direccion
+    justify-content: $justify
+    align-items: $align
+
+@mixin letras($color:white, $size:14px, $line:10px, $weight:light)
+    color: $color
+    font-size: $size
+    line-height: $line
+    font-weight: $weight
+
+@mixin column()
+    display: flex
+    flex-direction: column
+
+$fuentefamilia : 'Amazon Ember'
